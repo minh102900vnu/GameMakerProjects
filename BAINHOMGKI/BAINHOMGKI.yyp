@@ -20,6 +20,7 @@
   "name":"BAINHOMGKI",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_nvat","path":"sprites/spr_nvat/spr_nvat.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
