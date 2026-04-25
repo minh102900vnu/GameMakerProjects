@@ -22,6 +22,7 @@
   },
   "name":"BAINHOMGKI",
   "resources":[
+    {"id":{"name":"obj_nvdichuyen","path":"objects/obj_nvdichuyen/obj_nvdichuyen.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_dan","path":"sprites/spr_dan/spr_dan.yy",},},
     {"id":{"name":"spr_nvdichuyen","path":"sprites/spr_nvdichuyen/spr_nvdichuyen.yy",},},
