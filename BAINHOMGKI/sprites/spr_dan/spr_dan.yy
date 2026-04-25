@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_dan",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":11,
   "bbox_left":5,
   "bbox_right":10,
-  "bbox_top":4,
+  "bbox_top":6,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

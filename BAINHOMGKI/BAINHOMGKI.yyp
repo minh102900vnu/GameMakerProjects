@@ -23,7 +23,8 @@
   },
   "name":"BAINHOMGKI",
   "resources":[
-    {"id":{"name":"obj_nvdichuyen","path":"objects/obj_nvdichuyen/obj_nvdichuyen.yy",},},
+    {"id":{"name":"obj_dan","path":"objects/obj_dan/obj_dan.yy",},},
+    {"id":{"name":"obj_nv","path":"objects/obj_nv/obj_nv.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_dan","path":"sprites/spr_dan/spr_dan.yy",},},
     {"id":{"name":"spr_mushroom","path":"sprites/spr_mushroom/spr_mushroom.yy",},},

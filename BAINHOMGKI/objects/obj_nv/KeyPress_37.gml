@@ -1,4 +1,4 @@
-speed=2
+speed=4
 direction=180
 
 image_xscale=-1
