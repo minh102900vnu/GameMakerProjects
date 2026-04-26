@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bui",
+  "%Name":"Object8",
   "eventList":[],
   "managed":true,
-  "name":"obj_bui",
+  "name":"Object8",
   "overriddenProperties":[],
   "parent":{
-    "name":"map",
-    "path":"folders/map.yy",
+    "name":"BAINHOMGKI",
+    "path":"BAINHOMGKI.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bui",
-    "path":"sprites/spr_bui/spr_bui.yy",
+    "name":"obj_2slimes",
+    "path":"sprites/obj_2slimes/obj_2slimes.yy",
   },
   "spriteMaskId":null,
   "visible":true,
