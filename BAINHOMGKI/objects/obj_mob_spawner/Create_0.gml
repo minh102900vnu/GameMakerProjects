@@ -17,5 +17,6 @@ function spawn_quai(loai_quai, so_luong) {
 }
 
 spawn_quai(obj_slime, 10);
+spawn_quai(obj_2slimes, 6)
 spawn_quai(obj_mushroom, 7);
 spawn_quai(obj_phantom, 5);
