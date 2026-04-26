@@ -1,15 +1,5 @@
 {
   "$GMObject":"",
-<<<<<<<< HEAD:BAINHOMGKI/objects/Object8/Object8.yy
-  "%Name":"Object8",
-  "eventList":[],
-  "managed":true,
-  "name":"Object8",
-  "overriddenProperties":[],
-  "parent":{
-    "name":"BAINHOMGKI",
-    "path":"BAINHOMGKI.yyp",
-========
   "%Name":"obj_2slimes",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -21,7 +11,6 @@
   "parent":{
     "name":"mob",
     "path":"folders/mob.yy",
->>>>>>>> origin/main:BAINHOMGKI/objects/obj_2slimes/obj_2slimes.yy
   },
   "parentObjectId":null,
   "persistent":false,
@@ -42,13 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-<<<<<<<< HEAD:BAINHOMGKI/objects/Object8/Object8.yy
-    "name":"obj_2slimes",
-    "path":"sprites/obj_2slimes/obj_2slimes.yy",
-========
     "name":"spr_2slimes",
     "path":"sprites/spr_2slimes/spr_2slimes.yy",
->>>>>>>> origin/main:BAINHOMGKI/objects/obj_2slimes/obj_2slimes.yy
   },
   "spriteMaskId":null,
   "visible":true,
