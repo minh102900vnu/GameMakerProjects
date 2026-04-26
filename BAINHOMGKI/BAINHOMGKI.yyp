@@ -25,7 +25,6 @@
   },
   "name":"BAINHOMGKI",
   "resources":[
-    {"id":{"name":"obj_2slimes","path":"objects/obj_2slimes/obj_2slimes.yy",},},
     {"id":{"name":"obj_dan","path":"objects/obj_dan/obj_dan.yy",},},
     {"id":{"name":"obj_mob_spawner","path":"objects/obj_mob_spawner/obj_mob_spawner.yy",},},
     {"id":{"name":"obj_mushroom","path":"objects/obj_mushroom/obj_mushroom.yy",},},
@@ -35,7 +34,6 @@
     {"id":{"name":"obj_slime","path":"objects/obj_slime/obj_slime.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"BGxaitam","path":"sprites/BGxaitam/BGxaitam.yy",},},
-    {"id":{"name":"spr_2slimes","path":"sprites/spr_2slimes/spr_2slimes.yy",},},
     {"id":{"name":"spr_dan","path":"sprites/spr_dan/spr_dan.yy",},},
     {"id":{"name":"spr_mushroom","path":"sprites/spr_mushroom/spr_mushroom.yy",},},
     {"id":{"name":"spr_nvdichuyen","path":"sprites/spr_nvdichuyen/spr_nvdichuyen.yy",},},
