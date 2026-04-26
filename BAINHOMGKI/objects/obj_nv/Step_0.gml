@@ -1,4 +1,6 @@
-var active_stacks = 0; 
+//Không sửa đoạn dưới này
+
+var active_stacks = 0;
 
 for (var i = array_length(poison_timers) - 1; i >= 0; i--) {
     poison_timers[i]--; 
@@ -21,4 +23,4 @@ if (active_stacks > 0) {
     poison_tick = game_get_speed(gamespeed_fps) * 10;
 }
 
-//ĐÂY LÀ TƯƠNG TÁC VỚI CON 2SLIMES, KHÔNG CHỈNH SỬA
+//Không sửa đoạn trên này
