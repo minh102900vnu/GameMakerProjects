@@ -43,7 +43,6 @@
     {"id":{"name":"obj_phantom","path":"objects/obj_phantom/obj_phantom.yy",},},
     {"id":{"name":"obj_slime","path":"objects/obj_slime/obj_slime.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"id":{"name":"BGxaitam","path":"sprites/BGxaitam/BGxaitam.yy",},},
     {"id":{"name":"spr_2slimes","path":"sprites/spr_2slimes/spr_2slimes.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_bui","path":"sprites/spr_bui/spr_bui.yy",},},
