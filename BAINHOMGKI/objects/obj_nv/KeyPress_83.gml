@@ -1,3 +1,3 @@
-speed=4
+speed=5
 direction=270
 sprite_index=spr_nvdichuyen

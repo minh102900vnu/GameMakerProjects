@@ -1,5 +1,4 @@
-speed=4
+speed=5
 direction=0
-
-image_xscale=1
 sprite_index=spr_nvdichuyen
+image_xscale=1

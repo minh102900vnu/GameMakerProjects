@@ -20,3 +20,10 @@ if (active_stacks > 0) {
 } else {
     poison_tick = game_get_speed(gamespeed_fps) * 10;
 }
+var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+
+var move_speed = 5;
+
+x += h * speed;
+y += v * speed;
