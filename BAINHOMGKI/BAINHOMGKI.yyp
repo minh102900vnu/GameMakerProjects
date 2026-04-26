@@ -26,6 +26,7 @@
   },
   "name":"BAINHOMGKI",
   "resources":[
+    {"id":{"name":"obj_2slimes","path":"objects/obj_2slimes/obj_2slimes.yy",},},
     {"id":{"name":"obj_bui","path":"objects/obj_bui/obj_bui.yy",},},
     {"id":{"name":"obj_cay1","path":"objects/obj_cay1/obj_cay1.yy",},},
     {"id":{"name":"obj_cay2","path":"objects/obj_cay2/obj_cay2.yy",},},
@@ -43,6 +44,7 @@
     {"id":{"name":"obj_slime","path":"objects/obj_slime/obj_slime.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"BGxaitam","path":"sprites/BGxaitam/BGxaitam.yy",},},
+    {"id":{"name":"spr_2slimes","path":"sprites/spr_2slimes/spr_2slimes.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_bui","path":"sprites/spr_bui/spr_bui.yy",},},
     {"id":{"name":"spr_cay1","path":"sprites/spr_cay1/spr_cay1.yy",},},
