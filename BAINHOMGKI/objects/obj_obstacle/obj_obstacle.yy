@@ -26,11 +26,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_obstacle",
     "path":"sprites/spr_obstacle/spr_obstacle.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
