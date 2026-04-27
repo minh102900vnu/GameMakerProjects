@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_obstacle",
-  "eventList":[],
+  "%Name":"obj_trungquai",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_obstacle",
+  "name":"obj_trungquai",
   "overriddenProperties":[],
   "parent":{
-    "name":"obstacle",
-    "path":"folders/obstacle.yy",
+    "name":"danvavukhi",
+    "path":"folders/danvavukhi.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_obstacle",
-    "path":"sprites/spr_obstacle/spr_obstacle.yy",
+    "name":"spr_trungquai",
+    "path":"sprites/spr_trungquai/spr_trungquai.yy",
   },
   "spriteMaskId":null,
   "visible":true,
