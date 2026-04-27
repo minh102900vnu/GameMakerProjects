@@ -22,38 +22,39 @@ switch (state) {
             } else {
                 wander_timer--;
             }
-            if (hspeed > 0) image_xscale = 1; 
-            else if (hspeed < 0) image_xscale = -1;
+            if (hspeed > 0) image_xscale = 1; else if (hspeed < 0) image_xscale = -1;
         }
         break;
 
     case "chase":
         speed = 0; 
         if (dist_to_player > 300) {
-            state = "wander";
-        } else if (dist_to_player <= 15) { 
-            state = "attack";
+            state = "wander"; 
         } else {
             if (abs(obj_nv.x - x) > 2) {
                 if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
             }
             mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
-        }
-        break;
-
-    case "attack":
-        if (abs(obj_nv.x - x) > 2) {
-            if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
-        }
-        if (attack_cooldown <= 0) {
-            obj_nv.hp -= 1; 
-            attack_cooldown = game_get_speed(gamespeed_fps); 
-            state = "retreat";
-            retreat_timer = game_get_speed(gamespeed_fps) * 0.5; 
+            
+            if (place_meeting(x, y, obj_nv) && attack_cooldown <= 0) {
+                obj_nv.hp -= 1; 
+                
+                if (!instance_exists(obj_trungquai)) {
+                    var ef = instance_create_layer(obj_nv.x, obj_nv.y, layer, obj_trungquai);
+                    ef.target = obj_nv.id;
+                }
+                
+                attack_cooldown = game_get_speed(gamespeed_fps); 
+                state = "retreat";
+                retreat_timer = game_get_speed(gamespeed_fps) * 0.5; 
+            }
         }
         break;
 
     case "retreat":
+        if (abs(obj_nv.x - x) > 2) { 
+            if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1; 
+        }
         if (retreat_timer > 0) {
             var dir_away = point_direction(obj_nv.x, obj_nv.y, x, y);
             x += lengthdir_x(spd, dir_away);

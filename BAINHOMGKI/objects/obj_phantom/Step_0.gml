@@ -15,7 +15,6 @@ switch(state) {
         if (dist_to_player <= 150) {
             var rand_dir = random(360);
             var ban_kinh = 80; 
-            
             x = obj_nv.x + lengthdir_x(ban_kinh, rand_dir);
             y = obj_nv.y + lengthdir_y(ban_kinh, rand_dir);
             
@@ -30,8 +29,7 @@ switch(state) {
             } else {
                 wander_timer--;
             }
-            if (hspeed > 0) image_xscale = 1; 
-            else if (hspeed < 0) image_xscale = -1;
+            if (hspeed > 0) image_xscale = 1; else if (hspeed < 0) image_xscale = -1;
         }
         break;
 
@@ -43,7 +41,6 @@ switch(state) {
         } 
         else if (chase_timer > 0) {
             chase_timer--; 
-            
             if (abs(obj_nv.x - x) > 2) {
                 if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
             }
@@ -52,7 +49,6 @@ switch(state) {
                 retreat_timer--;
                 speed = 0; 
                 var dir_away = point_direction(obj_nv.x, obj_nv.y, x, y);
-                
                 x += lengthdir_x(spd * 2, dir_away);
                 y += lengthdir_y(spd * 2, dir_away);
             } 
@@ -61,6 +57,12 @@ switch(state) {
                 
                 if (place_meeting(x, y, obj_nv) && damage_cooldown <= 0) {
                     obj_nv.hp -= 2; 
+                    
+                    if (!instance_exists(obj_trungquai)) {
+                        var ef = instance_create_layer(obj_nv.x, obj_nv.y, layer, obj_trungquai);
+                        ef.target = obj_nv.id;
+                    }
+                    
                     damage_cooldown = game_get_speed(gamespeed_fps) * 1.5; 
                     retreat_timer = game_get_speed(gamespeed_fps) * 0.5; 
                 }
@@ -69,7 +71,6 @@ switch(state) {
         else {
             hp = max_hp; 
             state = "wander"; 
-            
             var escape_dir = random(360);
             x = obj_nv.x + lengthdir_x(300, escape_dir); 
             y = obj_nv.y + lengthdir_y(300, escape_dir);
