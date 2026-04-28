@@ -1,5 +1,5 @@
-hp = 100; 
-max_hp=100
+hp = 200; 
+max_hp=200
 hp_smooth = hp;
 is_poisoned = false;
 poison_timers = [];

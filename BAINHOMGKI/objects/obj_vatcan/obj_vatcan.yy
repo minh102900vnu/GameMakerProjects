@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_obstacle",
+  "%Name":"obj_vatcan",
   "eventList":[],
   "managed":true,
-  "name":"obj_obstacle",
+  "name":"obj_vatcan",
   "overriddenProperties":[],
   "parent":{
     "name":"obstacle",
@@ -26,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"spr_obstacle",
-    "path":"sprites/spr_obstacle/spr_obstacle.yy",
+    "name":"spr_vatcan",
+    "path":"sprites/spr_vatcan/spr_vatcan.yy",
   },
   "spriteMaskId":null,
   "visible":true,
