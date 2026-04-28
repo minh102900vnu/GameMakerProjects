@@ -31,7 +31,6 @@ if (active_stacks > 0) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-var move_speed = 5;
-
-x += h * speed;
-y += v * speed;
+var spd = 4;
+x+=h*spd
+y+=v*spd
