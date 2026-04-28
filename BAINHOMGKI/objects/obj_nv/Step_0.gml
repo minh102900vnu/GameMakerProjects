@@ -1,5 +1,5 @@
 var active_stacks = 0;
-
+hp_smooth = lerp(hp_smooth, hp, 0.1);
 for (var i = array_length(poison_timers) - 1; i >= 0; i--) {
     poison_timers[i]--;
     
