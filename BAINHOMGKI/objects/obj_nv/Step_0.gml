@@ -14,7 +14,7 @@ if (active_stacks > 0) {
     poison_tick--;
     if (poison_tick <= 0) {
         hp -= active_stacks; 
-        poison_tick = game_get_speed(gamespeed_fps); 
+        poison_tick = game_get_speed(gamespeed_fps) * 2.5; 
     }
     
     if (!instance_exists(obj_trungdoc)) {
@@ -22,7 +22,7 @@ if (active_stacks > 0) {
         ef.target = id; 
     }
 } else {
-    poison_tick = game_get_speed(gamespeed_fps);
+    poison_tick = game_get_speed(gamespeed_fps) * 2.5;
     if (instance_exists(obj_trungdoc)) {
         instance_destroy(obj_trungdoc);
     }

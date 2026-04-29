@@ -36,9 +36,8 @@ switch (state) {
             }
             mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
             
-            // Chạm vào người thì bơm độc
             if (place_meeting(x, y, obj_nv) && attack_cooldown <= 0) {
-                var thoi_gian_doc = game_get_speed(gamespeed_fps) * 20; // Trúng độc 20 giây
+                var thoi_gian_doc = game_get_speed(gamespeed_fps) * 5; 
                 array_push(obj_nv.poison_timers, thoi_gian_doc);
                 
                 attack_cooldown = game_get_speed(gamespeed_fps); 
@@ -47,7 +46,7 @@ switch (state) {
             }
         }
         break;
-
+		
     case "retreat":
         if (abs(obj_nv.x - x) > 2) { 
             if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1; 
