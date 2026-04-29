@@ -48,16 +48,16 @@ if (h != 0) image_xscale = sign(h);
 // di chuyển
 x += h * spd;
 y += v * spd;
-
+if (shoot_cooldown > 0) shoot_cooldown--;
 // 🔥 CHỈ đổi sprite khi KHÔNG tấn công
 if (!is_attacking) {
 
     if (h != 0 || v != 0) {
         sprite_index = spr_nvdichuyen;
-        image_speed = 0.2;
+        image_speed = 0.5;
     } else {
         sprite_index = spr_nvdungyen;
-        image_speed = 0.1;
+        image_speed = 0.5;
     }
 
 }

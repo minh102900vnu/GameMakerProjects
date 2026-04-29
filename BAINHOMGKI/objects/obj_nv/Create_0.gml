@@ -9,3 +9,4 @@ poison_tick = 0;
 is_dead = false;
 death_phase = 0; // 0 = sống, 1 = ngã, 2 = tan biến
 is_attacking = false;
+shoot_cooldown = 0;

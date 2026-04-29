@@ -11,7 +11,7 @@ if (hp <= 0) {
 
         // 🔥 chỉ tạo hiệu ứng nếu THỰC SỰ được hồi
         if (p.hp > old_hp) {
-            var ef = instance_create_depth(p.x, p.y - 20, p.depth - 1, obj_hoimau);
+            var ef = instance_create_depth(p.x, p.y , p.depth - 1, obj_hoimau);
             ef.target = p.id;
         }
     }
