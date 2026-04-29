@@ -37,8 +37,15 @@ switch (state) {
             mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
             
             if (place_meeting(x, y, obj_nv) && attack_cooldown <= 0) {
-                var thoi_gian_doc = game_get_speed(gamespeed_fps) * 5; 
-                array_push(obj_nv.poison_timers, thoi_gian_doc);
+                
+                if (obj_nv.poison_stacks < 3) {
+                    obj_nv.poison_stacks += 1;
+                    
+                    if (obj_nv.poison_timer <= 0) {
+                        obj_nv.poison_timer = game_get_speed(gamespeed_fps) * 5;
+                        obj_nv.poison_tick = game_get_speed(gamespeed_fps) * 2.5;
+                    }
+                }
                 
                 attack_cooldown = game_get_speed(gamespeed_fps); 
                 state = "retreat";
@@ -46,7 +53,7 @@ switch (state) {
             }
         }
         break;
-		
+
     case "retreat":
         if (abs(obj_nv.x - x) > 2) { 
             if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1; 

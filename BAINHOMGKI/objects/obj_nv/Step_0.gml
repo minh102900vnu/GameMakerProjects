@@ -1,19 +1,9 @@
-var active_stacks = 0;
-hp_smooth = lerp(hp_smooth, hp, 0.1);
-for (var i = array_length(poison_timers) - 1; i >= 0; i--) {
-    poison_timers[i]--;
-    
-    if (poison_timers[i] <= 0) {
-        array_delete(poison_timers, i, 1); 
-    } else {
-        active_stacks++; 
-    }
-}
-
-if (active_stacks > 0) {
+if (poison_timer > 0) {
+    poison_timer--;
     poison_tick--;
+    
     if (poison_tick <= 0) {
-        hp -= active_stacks; 
+        hp -= poison_stacks; 
         poison_tick = game_get_speed(gamespeed_fps) * 2.5; 
     }
     
@@ -22,11 +12,13 @@ if (active_stacks > 0) {
         ef.target = id; 
     }
 } else {
-    poison_tick = game_get_speed(gamespeed_fps) * 2.5;
+    poison_stacks = 0; 
+    
     if (instance_exists(obj_trungdoc)) {
         instance_destroy(obj_trungdoc);
     }
 }
+
 // nếu đã chết → chỉ chạy animation
 if (is_dead) {
     exit;
