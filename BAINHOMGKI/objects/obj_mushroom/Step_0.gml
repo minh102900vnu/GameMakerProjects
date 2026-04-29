@@ -1,10 +1,11 @@
+event_inherited();
 if (!instance_exists(obj_nv)) { speed = 0; exit; }
 
 var dan = instance_place(x, y, obj_dan);
 if (dan != noone) {
     hp -= 1; 
     instance_destroy(dan); 
-    if (hp <= 0) { instance_destroy(); exit; }
+    if (hp <= 0) { exit; }
 }
 
 var dist_to_player = distance_to_object(obj_nv);
