@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"danvavukhi","folderPath":"folders/danvavukhi.yy","name":"danvavukhi","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"light","folderPath":"folders/light.yy","name":"light","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"map","folderPath":"folders/map.yy","name":"map","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mob_spawner","folderPath":"folders/mob_spawner.yy","name":"mob_spawner","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mob","folderPath":"folders/mob.yy","name":"mob","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -79,6 +80,7 @@
     {"id":{"name":"spr_end1","path":"sprites/spr_end1/spr_end1.yy",},},
     {"id":{"name":"spr_end2","path":"sprites/spr_end2/spr_end2.yy",},},
     {"id":{"name":"spr_hoimau","path":"sprites/spr_hoimau/spr_hoimau.yy",},},
+    {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
     {"id":{"name":"spr_mushroom","path":"sprites/spr_mushroom/spr_mushroom.yy",},},
     {"id":{"name":"spr_nam1","path":"sprites/spr_nam1/spr_nam1.yy",},},
     {"id":{"name":"spr_nam2","path":"sprites/spr_nam2/spr_nam2.yy",},},
