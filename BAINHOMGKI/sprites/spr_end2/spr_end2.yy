@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"nut",
-    "path":"folders/nut.yy",
+    "name":"start menu",
+    "path":"folders/start menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
