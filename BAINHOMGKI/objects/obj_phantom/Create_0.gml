@@ -1,4 +1,4 @@
-max_hp = 20;
+max_hp = 7;
 hp = max_hp;
 spd = 0.5;
 

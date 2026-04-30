@@ -30,3 +30,18 @@ if (hp > 0) {
 // 🟦 viền
 draw_set_color(c_white);
 draw_rectangle(xx, yy, xx + bar_w, yy + bar_h, true);
+
+
+var cx = (bbox_left + bbox_right) / 2; 
+var shadow_w = (bbox_right - bbox_left) * 0.6; 
+var shadow_h = 6; 
+
+draw_set_alpha(0.4);
+draw_set_colour(c_black);
+
+draw_ellipse(cx - shadow_w/2, bbox_bottom - shadow_h/2, cx + shadow_w/2, bbox_bottom + shadow_h/2, false);
+
+draw_set_alpha(1.0);
+draw_set_colour(c_white);
+
+draw_self();
