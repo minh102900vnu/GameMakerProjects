@@ -14,7 +14,7 @@ if (is_dead) {
 
         sprite_index = spr_nvtanbien;
         image_index = 0;
-        image_speed = 1;
+        image_speed = 0.5;
 
         // áp lại hướng
         image_xscale = dir;

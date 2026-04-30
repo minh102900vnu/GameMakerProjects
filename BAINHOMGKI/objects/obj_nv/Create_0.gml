@@ -1,5 +1,5 @@
-hp = 100; 
-max_hp = 100
+hp = 50; 
+max_hp = 50
 hp_smooth = hp;
 
 poison_stacks = 0;

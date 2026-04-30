@@ -31,7 +31,7 @@ if (hp <= 0) {
 
     sprite_index = spr_nvnga;
     image_index = 0;
-    image_speed = 0.1;
+    image_speed = 0.3;
 
     exit;
 }
