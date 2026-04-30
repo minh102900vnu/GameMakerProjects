@@ -11,10 +11,10 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"danvavukhi","folderPath":"folders/danvavukhi.yy","name":"danvavukhi","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Music","folderPath":"folders/Music.yy","name":"Music","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"map","folderPath":"folders/map.yy","name":"map","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mob_spawner","folderPath":"folders/mob_spawner.yy","name":"mob_spawner","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mob","folderPath":"folders/mob.yy","name":"mob","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Music","folderPath":"folders/Music.yy","name":"Music","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"nhanvat","folderPath":"folders/nhanvat.yy","name":"nhanvat","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"nut","folderPath":"folders/nut.yy","name":"nut","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"obstacle","folderPath":"folders/obstacle.yy","name":"obstacle","resourceType":"GMFolder","resourceVersion":"2.0",},
