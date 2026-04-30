@@ -65,6 +65,7 @@
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"BGMS","path":"sounds/BGMS/BGMS.yy",},},
     {"id":{"name":"BGMT","path":"sounds/BGMT/BGMT.yy",},},
+    {"id":{"name":"lasershoot","path":"sounds/lasershoot/lasershoot.yy",},},
     {"id":{"name":"spr_2slimes","path":"sprites/spr_2slimes/spr_2slimes.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_bui","path":"sprites/spr_bui/spr_bui.yy",},},
