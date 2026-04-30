@@ -11,7 +11,6 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"danvavukhi","folderPath":"folders/danvavukhi.yy","name":"danvavukhi","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"win_lose","folderPath":"folders/win_lose.yy","name":"win_lose","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"map","folderPath":"folders/map.yy","name":"map","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mob_spawner","folderPath":"folders/mob_spawner.yy","name":"mob_spawner","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mob","folderPath":"folders/mob.yy","name":"mob","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -19,6 +18,7 @@
     {"$GMFolder":"","%Name":"nhanvat","folderPath":"folders/nhanvat.yy","name":"nhanvat","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"obstacle","folderPath":"folders/obstacle.yy","name":"obstacle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"start menu","folderPath":"folders/start menu.yy","name":"start menu","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"win_lose","folderPath":"folders/win_lose.yy","name":"win_lose","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gm_filter_tintfilter-1.0.0","name":"io.gamemaker.gm_filter_tintfilter-1.0.0","path":"io.gamemaker.gm_filter_tintfilter-1.0.0.yyp",},
@@ -81,6 +81,7 @@
     {"id":{"name":"spr_end1","path":"sprites/spr_end1/spr_end1.yy",},},
     {"id":{"name":"spr_end2","path":"sprites/spr_end2/spr_end2.yy",},},
     {"id":{"name":"spr_hoimau","path":"sprites/spr_hoimau/spr_hoimau.yy",},},
+    {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
     {"id":{"name":"spr_lose","path":"sprites/spr_lose/spr_lose.yy",},},
     {"id":{"name":"spr_mushroom","path":"sprites/spr_mushroom/spr_mushroom.yy",},},
     {"id":{"name":"spr_nam1","path":"sprites/spr_nam1/spr_nam1.yy",},},
