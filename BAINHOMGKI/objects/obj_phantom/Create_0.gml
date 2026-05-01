@@ -1,6 +1,6 @@
 max_hp = 7;
 hp = max_hp;
-spd = 0.5;
+spd = 1;
 
 state = "wander";
 chase_timer = 0; 

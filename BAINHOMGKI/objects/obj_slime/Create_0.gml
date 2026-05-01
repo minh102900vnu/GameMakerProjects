@@ -1,5 +1,5 @@
 hp = 3; 
-spd = 0.5;
+spd = 1;
 
 state = "wander"; 
 attack_cooldown = 0; 

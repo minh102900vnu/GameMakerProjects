@@ -44,7 +44,7 @@ if (hp <= 0) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-var spd = 8;
+var spd = 4;
 
 // lật hướng
 if (h != 0) image_xscale = sign(h);
