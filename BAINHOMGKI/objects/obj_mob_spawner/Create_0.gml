@@ -1,3 +1,4 @@
+global.game_ended = false; 
 randomize(); 
 
 function spawn_quai(loai_quai, so_luong) {
@@ -20,3 +21,4 @@ spawn_quai(obj_slime, 10);
 spawn_quai(obj_2slimes, 8);
 spawn_quai(obj_mushroom, 7);
 spawn_quai(obj_phantom, 5);
+victory_triggered = false;

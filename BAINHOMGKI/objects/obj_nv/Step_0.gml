@@ -1,3 +1,7 @@
+if (global.game_ended == true) {
+    image_speed = 0; 
+    exit;            
+}
 if (poison_timer > 0) {
     poison_timer--;
     poison_tick--;

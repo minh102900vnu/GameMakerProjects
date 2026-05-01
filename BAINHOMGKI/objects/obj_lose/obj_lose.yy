@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_mob_spawner",
+  "%Name":"obj_lose",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_mob_spawner",
+  "name":"obj_lose",
   "overriddenProperties":[],
   "parent":{
-    "name":"mob_spawner",
-    "path":"folders/mob_spawner.yy",
+    "name":"win_lose",
+    "path":"folders/win_lose.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_lose",
+    "path":"sprites/spr_lose/spr_lose.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

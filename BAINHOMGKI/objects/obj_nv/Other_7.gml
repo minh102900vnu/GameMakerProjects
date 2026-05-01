@@ -20,6 +20,7 @@ if (is_dead) {
         image_xscale = dir;
     }
     else if (death_phase == 2) {
+		instance_create_layer(0, 0, "Instances", obj_lose);
         instance_destroy();
     }
 
