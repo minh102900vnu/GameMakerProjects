@@ -34,7 +34,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_nvdungyen",
     "path":"sprites/spr_nvdungyen/spr_nvdungyen.yy",
