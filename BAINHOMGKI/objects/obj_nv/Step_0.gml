@@ -53,7 +53,6 @@ if (h != 0) image_xscale = sign(h);
 x += h * spd;
 y += v * spd;
 if (shoot_cooldown > 0) shoot_cooldown--;
-// 🔥 CHỈ đổi sprite khi KHÔNG tấn công
 if (!is_attacking) {
 
     if (h != 0 || v != 0) {

@@ -8,6 +8,6 @@ if (!is_dead && shoot_cooldown <= 0) {
     image_index = 0;
     image_speed = 1;
 	is_attacking = true; 
-    shoot_cooldown = 30; // ~1 giây (60 frame)
+    shoot_cooldown = 30;
 }
 
