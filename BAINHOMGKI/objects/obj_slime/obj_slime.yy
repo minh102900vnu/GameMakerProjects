@@ -32,11 +32,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_slime",
     "path":"sprites/spr_slime/spr_slime.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_vatcannv",
+    "path":"sprites/spr_vatcannv/spr_vatcannv.yy",
+  },
   "visible":true,
 }
