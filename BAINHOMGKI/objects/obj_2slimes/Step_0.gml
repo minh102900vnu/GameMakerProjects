@@ -13,7 +13,7 @@ if (attack_cooldown > 0) attack_cooldown--;
 
 switch (state) {
     case "wander":
-        if (dist_to_player <= 300) {
+        if (dist_to_player <= 200) {
             state = "chase"; 
         } else {
             if (wander_timer <= 0) {
@@ -29,7 +29,7 @@ switch (state) {
 
     case "chase":
         speed = 0; 
-        if (dist_to_player > 300) {
+        if (dist_to_player > 250) {
             state = "wander"; 
         } else {
             if (abs(obj_nv.x - x) > 2) {
