@@ -34,7 +34,7 @@ switch (state) {
         if (dist_to_player > 250) {
             state = "wander"; 
         } else {
-            if (abs(obj_nv.x - x) > 2) {
+            if (abs(obj_nv.x - x) > 5) {
                 if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
             }
 
@@ -44,7 +44,7 @@ switch (state) {
                 bullet.speed = 3; 
                 shoot_cooldown = game_get_speed(gamespeed_fps) * 2;
             } 
-            else {
+            else if (dist_to_player > 50) {
                 mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
             }
         }

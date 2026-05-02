@@ -42,7 +42,7 @@ switch(state) {
         } 
         else if (chase_timer > 0) {
             chase_timer--; 
-            if (abs(obj_nv.x - x) > 2) {
+            if (abs(obj_nv.x - x) > 5) {
                 if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
             }
             
@@ -54,7 +54,9 @@ switch(state) {
                 y += lengthdir_y(spd * 2, dir_away);
             } 
             else {
-                mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
+                if (!place_meeting(x, y, obj_nv)) {
+                    mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
+                }
                 
                 if (place_meeting(x, y, obj_nv) && damage_cooldown <= 0) {
                     obj_nv.hp -= 2; 

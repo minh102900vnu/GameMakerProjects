@@ -32,10 +32,13 @@ switch (state) {
         if (dist_to_player > 250) {
             state = "wander"; 
         } else {
-            if (abs(obj_nv.x - x) > 2) {
+            if (abs(obj_nv.x - x) > 5) {
                 if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
             }
-            mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
+            
+            if (!place_meeting(x, y, obj_nv)) {
+                mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
+            }
             
             if (place_meeting(x, y, obj_nv) && attack_cooldown <= 0) {
                 
@@ -56,7 +59,7 @@ switch (state) {
         break;
 
     case "retreat":
-        if (abs(obj_nv.x - x) > 2) { 
+        if (abs(obj_nv.x - x) > 5) { 
             if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1; 
         }
         if (retreat_timer > 0) {
