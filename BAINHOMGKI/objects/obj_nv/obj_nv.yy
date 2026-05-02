@@ -39,6 +39,9 @@
     "name":"spr_nvdungyen",
     "path":"sprites/spr_nvdungyen/spr_nvdungyen.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_vatcannv",
+    "path":"sprites/spr_vatcannv/spr_vatcannv.yy",
+  },
   "visible":true,
 }
