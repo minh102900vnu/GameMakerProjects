@@ -9,7 +9,8 @@ if (dan != noone) {
 }
 
 var dist_to_player = distance_to_object(obj_nv);
-if (attack_cooldown > 0) attack_cooldown--;
+
+if (shoot_cooldown > 0) shoot_cooldown--;
 
 switch (state) {
     case "wander":
@@ -28,41 +29,24 @@ switch (state) {
         break;
 
     case "chase":
-        speed = 0; 
+        speed = 0;
+
         if (dist_to_player > 300) {
             state = "wander"; 
         } else {
             if (abs(obj_nv.x - x) > 2) {
                 if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
             }
-            mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
-            
-            if (place_meeting(x, y, obj_nv) && attack_cooldown <= 0) {
-                obj_nv.hp -= 1; 
-                
-                if (!instance_exists(obj_trungquai)) {
-                    var ef = instance_create_layer(obj_nv.x, obj_nv.y, layer, obj_trungquai);
-                    ef.target = obj_nv.id;
-                }
-                
-                attack_cooldown = game_get_speed(gamespeed_fps); 
-                state = "retreat";
-                retreat_timer = game_get_speed(gamespeed_fps) * 0.5; 
-            }
-        }
-        break;
 
-    case "retreat":
-        if (abs(obj_nv.x - x) > 2) { 
-            if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1; 
-        }
-        if (retreat_timer > 0) {
-            var dir_away = point_direction(obj_nv.x, obj_nv.y, x, y);
-            x += lengthdir_x(spd, dir_away);
-            y += lengthdir_y(spd, dir_away);
-            retreat_timer--;
-        } else {
-            state = "chase";
+            if (dist_to_player <= 60 && shoot_cooldown <= 0) {
+                var bullet = instance_create_layer(x, y, layer, obj_slimebullet);
+                bullet.direction = point_direction(x, y, obj_nv.x, obj_nv.y);
+                bullet.speed = 3; 
+                shoot_cooldown = game_get_speed(gamespeed_fps) * 2;
+            } 
+            else {
+                mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
+            }
         }
         break;
 }
