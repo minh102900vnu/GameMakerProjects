@@ -54,18 +54,16 @@ switch(state) {
                 y += lengthdir_y(spd * 2, dir_away);
             } 
             else {
-                if (!place_meeting(x, y, obj_nv)) {
+                if (dist_to_player > 5) {
                     mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
                 }
                 
-                if (place_meeting(x, y, obj_nv) && damage_cooldown <= 0) {
+                if (dist_to_player <= 5 && damage_cooldown <= 0) {
                     obj_nv.hp -= 2; 
-                    
                     if (!instance_exists(obj_trungquai)) {
                         var ef = instance_create_layer(obj_nv.x, obj_nv.y, layer, obj_trungquai);
                         ef.target = obj_nv.id;
                     }
-                    
                     damage_cooldown = game_get_speed(gamespeed_fps) * 1.5; 
                     retreat_timer = game_get_speed(gamespeed_fps) * 0.5; 
                 }

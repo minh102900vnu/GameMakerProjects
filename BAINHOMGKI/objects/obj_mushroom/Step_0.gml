@@ -8,12 +8,12 @@ if (dan != noone) {
     if (hp <= 0) { exit; }
 }
 
-var dist_to_player = distance_to_object(obj_nv);
+var dist_to_player = point_distance(x, y, obj_nv.x, obj_nv.y);
 if (attack_cooldown > 0) attack_cooldown--;
 
 switch (state) {
     case "wander":
-        if (dist_to_player <= 200) {
+        if (dist_to_player <= 400) {
             state = "chase"; 
         } else {
             if (wander_timer <= 0) {
@@ -29,18 +29,24 @@ switch (state) {
 
     case "chase":
         speed = 0; 
-        if (dist_to_player > 250) {
+        if (dist_to_player > 500) {
             state = "wander"; 
         } else {
-            if (abs(obj_nv.x - x) > 5) {
+            if (abs(obj_nv.x - x) > 2) {
                 if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1;
             }
             
-            if (!place_meeting(x, y, obj_nv)) {
-                mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
+            if (dist_to_player > 15) {
+                if (dist_to_player > 60) {
+                    mp_potential_step(obj_nv.x, obj_nv.y, spd, false);
+                } else {
+                    var dir_to = point_direction(x, y, obj_nv.x, obj_nv.y);
+                    x += lengthdir_x(spd, dir_to);
+                    y += lengthdir_y(spd, dir_to);
+                }
             }
             
-            if (place_meeting(x, y, obj_nv) && attack_cooldown <= 0) {
+            if (dist_to_player <= 15 && attack_cooldown <= 0) {
                 obj_nv.hp -= 1; 
                 
                 if (!instance_exists(obj_trungquai)) {
@@ -56,7 +62,7 @@ switch (state) {
         break;
 
     case "retreat":
-        if (abs(obj_nv.x - x) > 5) { 
+        if (abs(obj_nv.x - x) > 2) { 
             if (obj_nv.x > x) image_xscale = 1; else image_xscale = -1; 
         }
         if (retreat_timer > 0) {

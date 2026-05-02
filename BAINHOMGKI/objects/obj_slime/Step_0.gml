@@ -9,7 +9,6 @@ if (dan != noone) {
 }
 
 var dist_to_player = distance_to_object(obj_nv);
-
 if (shoot_cooldown > 0) shoot_cooldown--;
 
 switch (state) {
@@ -30,7 +29,6 @@ switch (state) {
 
     case "chase":
         speed = 0;
-
         if (dist_to_player > 250) {
             state = "wander"; 
         } else {
